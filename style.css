@@ -1,50 +1,127 @@
 
+#cat-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(250,250,250,255);
+
+    /* border: 5px solid red; */
+}
 #static-header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-    border: 5px solid red;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.298)
+    /* border: 5px solid red; */
 }
+#static-header h1{
+    font-family: 'DynaPuff', cursive;
+}
+
 #navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex-grow: .2;
+    
 
-    border: 5px solid red;
+    /* border: 5px solid red; */
+}
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+#static-header input{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+#static-header input::placeholder{
+    padding: 10px;
 }
 #profile-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(250,250,250,255);
+    /* border: 5px solid red; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.298); */
 
-    border: 5px solid red;
 
 }
 #profile-stats{
     display: flex;
     flex-direction: column;
-    flex-grow: .5;
+    /* flex-grow: .8; */
 
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 #username{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding-right: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+#message-btn{
+    background-color: white;
+    margin: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    border: .5px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+#follow-btn{
+    margin: 10px;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(69, 142, 255);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    border: .5px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+#follow-btn:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+#message-btn:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: lighter;
 }
 #profile-pic{
-    padding-left: 200px;
+    padding-right: 200px;
 }
 #post-followers{
     display: flex;
     flex-direction: row;
+    font-family: 'Roboto', sans-serif;
 
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 .follow{
     margin-left: 10px;
+    font-weight: bolder;
 }
 .follow:hover{
     cursor: pointer;
@@ -54,16 +131,45 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 #profile-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 818px;
+    border: 1px solid rgba(0, 0, 0, 0.254);
+    padding: 20px;
     background-color: (250,250,250,255);
-
-    border: 5px solid red;
+    margin-bottom: 30px;
+    /* border: 5px solid red; */
 }
 
 .pic-posts{
+    padding: 30px;
+    flex-basis: 25%;
     height: 200px;
     width: 200px;
     object-fit: cover;
+}
+#profile-content img{
+    border: 1px solid rgba(0, 0, 0, 0.063);
+}
+#profile-content img:hover{
+    border: .9px solid rgba(0, 0, 0, 0.621);
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    height: 60px;
+}
+#fsa{
+    width:75;
+    height: auto;
+}
+#creator{
+    margin-right: 20px;
 }

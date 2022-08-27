@@ -1,0 +1,69 @@
+
+#static-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border: 5px solid red;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: .2;
+
+    border: 5px solid red;
+}
+#profile-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(250,250,250,255);
+
+    border: 5px solid red;
+
+}
+#profile-stats{
+    display: flex;
+    flex-direction: column;
+    flex-grow: .5;
+
+    border: 5px solid red;
+}
+#username{
+    padding-right: 100px;
+}
+#profile-pic{
+    padding-left: 200px;
+}
+#post-followers{
+    display: flex;
+    flex-direction: row;
+
+    border: 5px solid red;
+}
+.follow{
+    margin-left: 10px;
+}
+.follow:hover{
+    cursor: pointer;
+}
+
+#profile-pic img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid red;
+}
+#profile-content{
+    background-color: (250,250,250,255);
+
+    border: 5px solid red;
+}
+
+.pic-posts{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}

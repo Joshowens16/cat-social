@@ -1,9 +1,13 @@
 
+body{
+    margin-top: 0px;
+}
 #cat-social{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(250,250,250,255);
+    margin-top: 0px;
 
     /* border: 5px solid red; */
 }
@@ -12,9 +16,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    z-index: 1;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.298)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.298);
+    opacity: .95;
+
     /* border: 5px solid red; */
 }
 #static-header h1{
@@ -26,7 +34,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-grow: .2;
+    flex-grow: .1;
+
     
 
     /* border: 5px solid red; */
@@ -45,11 +54,11 @@
     background-color: rgb(235, 235, 235);
     border: none;
     font-family: 'Roboto', sans-serif;
+    padding-left: 15px
 }
-#static-header input::placeholder{
-    padding: 10px;
-}
+
 #profile-header{
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,7 +129,6 @@
     /* border: 5px solid red; */
 }
 .follow{
-    margin-left: 10px;
     font-weight: bolder;
 }
 .follow:hover{
@@ -153,11 +161,10 @@
     width: 200px;
     object-fit: cover;
 }
-#profile-content img{
-    border: 1px solid rgba(0, 0, 0, 0.063);
-}
+
 #profile-content img:hover{
     border: .9px solid rgba(0, 0, 0, 0.621);
+    cursor: pointer;
 }
 .footer{
     display: flex;
@@ -172,4 +179,8 @@
 }
 #creator{
     margin-right: 20px;
+}
+.nav-links{
+    height: 30px;
+    width: 30px;
 }
